@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+
+  color: #f1f1f6;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #202020;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 72px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 90px;
+}
+
+.container h1 span {
+  color: #5a95ee;
+}
+
+.header {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h2 {
+  font-size: 24px;
+}
+
+.header button {
+  width: 48px;
+  height: 48px;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  background: #5a95ee;
+  transition: filter 0.2s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header button:hover {
+  filter: brightness(0.9);
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.divider {
+  width: 100%;
+  height: 0.5px;
+  background: #f1f1f1;
+}
+
+.task {
+  background: #1b1b1b;
+  padding: 18px;
+  width: 404px;
+  height: 56px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+}
+
+.task input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #1b1b1b;
+  border: 1px solid #f1f1f1;
+  margin-right: 8px;
+}
+
+.task span {
+  font-size: 14px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+}
+
+.task.done {
+  filter: opacity(0.4);
+}
+
+.task.done span {
+  text-decoration: line-through;
+}
